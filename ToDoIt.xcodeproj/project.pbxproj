@@ -13,6 +13,7 @@
 		5A17A844220F63D2007BDA91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A17A843220F63D2007BDA91 /* Assets.xcassets */; };
 		5A17A847220F63D2007BDA91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A17A845220F63D2007BDA91 /* LaunchScreen.storyboard */; };
 		5A17A856220FB422007BDA91 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5A17A854220FB422007BDA91 /* DataModel.xcdatamodeld */; };
+		5A41DE62220FE6C200A54BC8 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A41DE61220FE6C200A54BC8 /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5A17A846220F63D2007BDA91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A17A848220F63D2007BDA91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A17A855220FB422007BDA91 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		5A41DE61220FE6C200A54BC8 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		5A17A851220F8FD5007BDA91 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5A41DE61220FE6C200A54BC8 /* CategoryViewController.swift */,
 				5A17A83E220F63D1007BDA91 /* TodoListViewController.swift */,
 			);
 			path = Controllers;
@@ -173,6 +176,7 @@
 				5A17A83F220F63D1007BDA91 /* TodoListViewController.swift in Sources */,
 				5A17A856220FB422007BDA91 /* DataModel.xcdatamodeld in Sources */,
 				5A17A83D220F63D1007BDA91 /* AppDelegate.swift in Sources */,
+				5A41DE62220FE6C200A54BC8 /* CategoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
