@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--ToDoIt-->
+        <!--Items-->
         <scene sceneID="6aL-ku-RdV">
             <objects>
                 <tableViewController id="THh-tN-1xp" customClass="TodoListViewController" customModule="ToDoIt" customModuleProvider="target" sceneMemberID="viewController">
@@ -40,7 +40,7 @@
                             <outlet property="delegate" destination="THh-tN-1xp" id="0rK-z7-m3h"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="ToDoIt" id="N3Q-Sv-j1t">
+                    <navigationItem key="navigationItem" title="Items" id="N3Q-Sv-j1t">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="SRK-j1-YQm">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -75,7 +75,7 @@
             </objects>
             <point key="canvasLocation" x="1045.5999999999999" y="133.5832083958021"/>
         </scene>
-        <!--Category View Controller-->
+        <!--ToDoIt-->
         <scene sceneID="b4a-jL-zjW">
             <objects>
                 <tableViewController id="Hoc-SO-mpX" customClass="CategoryViewController" customModule="ToDoIt" customModuleProvider="target" sceneMemberID="viewController">
@@ -84,7 +84,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="wR1-Ot-yLX">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" id="wR1-Ot-yLX">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wR1-Ot-yLX" id="3Zo-5e-CrO">
@@ -98,7 +98,14 @@
                             <outlet property="delegate" destination="Hoc-SO-mpX" id="6vM-hJ-Mf3"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="ZSI-tw-hru"/>
+                    <navigationItem key="navigationItem" title="ToDoIt" id="ZSI-tw-hru">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="UEI-nQ-Dqr">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="Hoc-SO-mpX" id="1aE-Gd-WCN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="THh-tN-1xp" kind="show" identifier="goToItems" id="d6k-tO-W4X"/>
                     </connections>
