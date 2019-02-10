@@ -74,7 +74,6 @@ class TodoListViewController: UITableViewController {
             //what will happen once the user clicks add item button on the UI Alert
             
             
-            
             let newItem = Item(context: self.context)
             newItem.title = textField.text!
             newItem.done = false
